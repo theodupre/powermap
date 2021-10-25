@@ -4,11 +4,11 @@ Bug Powermap :
 - Transparency must be reset when no background is chosen or a new background is chosen  after no background
 - Implemente  encoder and rotation of SH signals
 - Access averaging parameter on map
-- Remember previous path
 - Régler problème extrapolation map
 - Fixer pas slider en fct du nombre de point dispo
 - Afficher curseur sur SPectrogramme avant calcul map
 - Checker pas d'averaging calcul covaraince
 - Affichage label temps en ms
 - Remettre Normalisation linéaire
+- Gerer verion matlab avec STFT FrequencyRange parameter
 

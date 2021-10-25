@@ -5,7 +5,7 @@ classdef powermaps
         fs;
         start;
         stop;
-        
+            
         s;
         transform = 'afSTFT';
         hopSize = 128;
@@ -237,9 +237,15 @@ classdef powermaps
            
             switch this.transform
                 case "STFT"
-                    [S, f, t] = stft(this.s, this.fs, 'Window', this.win, ...
-                        'OverlapLength', this.winLen - this.hopSize, ...
-                        'FFTLength', this.nfft, 'FrequencyRange', 'onesided');
+                    if contains(version, 'R2020b')
+                        [S, f, t] = stft(this.s, this.fs, 'Window', this.win, ...
+                            'OverlapLength', this.winLen - this.hopSize, ...
+                            'FFTLength', this.nfft, 'FrequencyRange', 'onesided');
+                    else
+                        [S, f, t] = stft(this.s, this.fs, 'Window', this.win, ...
+                            'OverlapLength', this.winLen - this.hopSize, ...
+                            'FFTLength', this.nfft, 'Centered', false);
+                    end
                     t = t + this.start;
                 case "afSTFT"
                     f = afSTFT(this.hopSize,(this.SHOrder+1)^2,1, 'hybrid'); % init
