@@ -1,14 +1,14 @@
 Bug Powermap : 
 - Can't click twice on the browse button in background selection
 - Change background selection to have no preset img and put selcted img in the app after first selection ? 
-- Transparency must be reset when no background is chosen or a new background is chosen  after no background
+- Transparency must be reset when no background is chosen or a new background is chosen  after no background [Done]
 - Implemente  encoder and rotation of SH signals
 - Access averaging parameter on map
 - Régler problème extrapolation map
-- Fixer pas slider en fct du nombre de point dispo
-- Afficher curseur sur SPectrogramme avant calcul map
+- Fixer pas slider en fct du nombre de point dispo [Done]
+- Afficher curseur sur SPectrogramme avant calcul map [Done]
 - Checker pas d'averaging calcul covaraince
-- Affichage label temps en ms
-- Remettre Normalisation linéaire
-- Gerer verion matlab avec STFT FrequencyRange parameter
+- Affichage label temps en ms [Done]
+- Remettre Normalisation linéaire [DONE]
+- Gerer verion matlab avec STFT FrequencyRange parameter [DONE]
 
